@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Counter · Giuseppe Vulduraro</title>
+  <meta name="description" content="Un counter in JavaScript puro: interfaccia creata con il DOM, passo regolabile e valore salvato nel browser.">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="page">
+    <header class="intro">
+      <p class="kicker">Progetto JavaScript · Master in AI e Agenti AI per il Business</p>
+      <h1>Counter</h1>
+      <p class="lead">Aumenta o diminuisci il valore con i pulsanti o con la tastiera. Il valore resta salvato anche se chiudi la pagina.</p>
+    </header>
+
+    <!-- L'interfaccia del counter viene creata da js/view.js -->
+    <div id="app"></div>
+
+    <noscript>
+      <p class="notice">Per usare il counter attiva JavaScript nel browser.</p>
+    </noscript>
+  </main>
+
+  <footer class="site-footer">
+    <p>Giuseppe Vulduraro · <a href="https://github.com/giuvul/counter-app">codice su GitHub</a></p>
+  </footer>
+
+  <!-- L'ordine conta: ogni file usa le funzioni dei file caricati prima -->
+  <script src="js/counter.js"></script>
+  <script src="js/storage.js"></script>
+  <script src="js/view.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
